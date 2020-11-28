@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>addition</title>
+</head>
+
+<body class="container">
+    <h1 class="text-center mt-5">
+        Simple addition program!
+    </h1>
+    <div class="alert alert-danger" id="error" role="alert"></div>
+    <div class="row mt-5">
+        <div class="col">
+            <div class="input-group">
+                <input type="text" id="numberOne" class="form-control" />
+                <div class="input-group-append input-group-prepend">
+                    <span class="input-group-text">+</span>
+                </div>
+                <input type="text" id="numberTwo" class="form-control" />
+            </div>
+        </div>
+        <div class="col">
+            <button id="addValues" class="btn btn-primary">Add Values</button>
+        </div>
+    </div>
+    <div class="card mt-5">
+        <div class="card-body">The result is: <span id="result"></span></div>
+    </div>
+
+    <script type="module" src="/src/index.js"></script>
+</body>
+
+</html>
